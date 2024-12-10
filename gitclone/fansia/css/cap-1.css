@@ -1,0 +1,241 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.inicio{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+nav img{
+    min-height: 100vh!important;
+    height: unset!important;
+}
+
+
+.contenedor-imagen {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contenedor-imagen {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-imagen {
+        height: 30vh;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilo para el botón */
+.button {
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049; /* Color cuando el cursor pasa sobre el botón */
+}
+
+/* Estilos para la viñeta de texto */
+.viñeta {
+    display: none; /* Inicialmente no visible */
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.viñeta.visible {
+    display: block; /* Muestra la viñeta cuando se agrega la clase "visible" */
+}
+
+
+/* Establece el contenedor de la imagen con posición relativa */
+.image-container {
+    position: relative;
+}
+
+/* Estilo del texto que aparecerá sobre la imagen */
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centrado */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Estilo del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+    text-align: center; /* Centrado del texto */
+    z-index: 10; /* Asegura que el texto esté encima de la imagen */
+}
+
+/* Estilo para el botón */
+#btnMostrarTexto {
+    position: absolute;
+    bottom: 20px; /* Ubicación hacia abajo */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar */
+    z-index: 20; /* Asegura que el botón esté encima de la imagen */
+}
+.Navegation{
+    position: absolute;
+    top: 50%;
+}
+.video {
+    width: 70%;
+    height: 90%;
+}
+
+.carousel-item {
+    position: relative; /* Para permitir posicionamiento absoluto del botón */
+}
+
+#num, #btnAdd{
+    display: none;
+}
+#playButton1, #playButton2 {
+    position: absolute;
+    top: 50%;   /* Centrado vertical */
+    left: 50%;  /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el botón para centrarlo perfectamente */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Aparece como un puntero cuando se pasa el mouse */
+    z-index: 10; /* Asegura que el botón esté sobre el video */
+}
+
+/* Opcional: Estilo del carrusel */
+.carousel-inner {
+    max-height: 80vh; /* Establece una altura máxima para los elementos del carrusel */
+}
+
+/* Estilo de los controles de carrusel */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 15; /* Asegura que los controles estén sobre los videos */
+}/* Asegúrate de que el body ocupe toda la altura de la pantalla */
+body, html {
+    height: 100%; /* Asegura que ocupe el 100% de la altura */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal del header para centrar el contenido */
+.header-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    text-align: center;
+}
+
+/* Estilos del botón "Comic" */
+button.transUp {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Estilo de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Puntero de mouse como mano */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Efectos de transición */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Efecto cuando el mouse pasa por encima (hover) */
+button.transUp:hover {
+    transform: translateY(-5px); /* Mueve el botón hacia arriba */
+    background-color: #45a049; /* Cambia el color de fondo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de profundidad */
+}
+
+/* Efecto cuando el botón es presionado (active) */
+button.transUp:active {
+    transform: translateY(1px); /* Mueve ligeramente el botón hacia abajo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más suave cuando se presiona */
+}
+
+/* Estilo de texto dentro del enlace */
+button.transUp a {
+    color: white; /* Asegura que el texto dentro del enlace sea blanco */
+    text-decoration: none; /* Quita la línea de subrayado */
+}
+
+/* Efecto cuando el enlace es visitado */
+button.transUp a:visited {
+    color: white; /* Asegura que el texto siga siendo blanco después de hacer clic */
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los botones de navegación */
+.navigation {
+    position: fixed;
+    bottom: 20px;  /* Asegura que los botones estén en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra los botones horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;  /* Puedes ajustar el ancho según sea necesario */
+}
+
+.button {
+    background-color: #007bff; /* Estilo de fondo */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Efecto hover */
+}
+

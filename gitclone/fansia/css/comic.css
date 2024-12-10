@@ -1,0 +1,105 @@
+.button-bottom {
+  background-image: url(../assets/multimedia/interaccioniniciocomic1.png);
+  height: 20vh;
+}
+.button{
+padding: 20px;}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  border: 2px solid rgb(26, 129, 95);
+  background-color: rgb(102, 207, 137);
+  margin: 50px auto 0 auto;
+}
+.card{
+  width: 25%;
+  height: 80%;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: rgb(47, 0, 255);
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+.disabled{
+  opacity: .7;
+  cursor: not-allowed;
+  filter: grayscale(100%);
+}
+.hola{
+  width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+
+}
+/* Estilo para el botón interactivo */
+.button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón (hover) */
+.button:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro */
+  border-color: #0056b3; /* Cambio de color en el borde */
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+}
+
+/* Efecto al hacer clic (active) */
+.button:active {
+  background-color: #004085; /* Color aún más oscuro */
+  transform: scale(0.95); /* Reducir el tamaño al hacer clic */
+}
+
+/* Agregar sombra para mejorar la apariencia */
+.button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:focus {
+  outline: none; /* Eliminar el borde de enfoque */
+}
+
+/* Estilo para la navegación */
+.navigation {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.navigation .left {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #28a745;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation .left:hover {
+  background-color: #218838; /* Color al pasar el ratón */
+}
